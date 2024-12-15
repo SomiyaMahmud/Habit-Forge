@@ -3,12 +3,11 @@ import './Navbar.css'
 const Navbar = () => {
   return (
     <div className='nav'>
-      <div className="nav-logo">HabitForge</div>
+      <img src={assets.logo.png} alt="" className='nav-logo'/>
       <ul className="nav-menu">
         <li className='nav-dis'>Home</li>
-        <li className='nav-dis'>Sign in</li>
-        <li className='nav-dis'>Sign up</li>
       </ul>
+      <button>sign in</button>
       
     </div>
   )
