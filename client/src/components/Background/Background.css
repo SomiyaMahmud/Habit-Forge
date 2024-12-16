@@ -1,13 +1,10 @@
-.background{
-    height: 100%;
-    width: 100%;
-    float: left;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding: none;
+.background {
+    height: 90%;
+    width: 80%;
     position: fixed;
+    top: 10%;
+    left: 10%;
     object-fit: cover;
     z-index: -1;
-}
+  }
+  

@@ -4,15 +4,36 @@
 
 }
 
+.home_one {
+    position: absolute;
+    top : 8rem;         
+    left: 5rem;           
+    text-align: left;    
+    padding: 1rem;      
+    max-width: 50%;   
+    font-family: 'Poppins', sans-serif;  
+  }
+  .home_one h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .home_one p {
+    font-size: 1.2rem;  
+    font-weight: 400;    
+    color: #0f0f0f;           
+  }
+
 .hero-text{
     color: #0a0909;
     font-size: 75px;
-    font-weight: 500;
-    line-height: 100px;
-    line-height: 39.5px;
+    font-weight: 400;
+    line-height: 200px;
+    line-height: 80px;
     position: absolute; 
-    bottom: 0;
-    left: 0;
+    bottom: 5rem;
+    left: 2rem;
     margin-bottom: 20px;
 }
 .hero-dot-play{

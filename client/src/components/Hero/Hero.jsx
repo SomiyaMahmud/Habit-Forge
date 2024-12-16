@@ -3,12 +3,18 @@ import './Hero.css';
 const Hero = ({ heroData, setHeroCount, heroCount }) => {
   return (
     <div className='hero'>
-      {heroCount > 0 && (
+      {heroCount === 0 ? (
+        <div className="home_one">
+          <h2>Welcome to HabitForge</h2>
+          <p>Track your habits and join community challenges!</p>
+        </div>
+      ) : (
         <div className="hero-text">
           <p>{heroData[heroCount].text1}</p>
           <p>{heroData[heroCount].text2}</p>
         </div>
       )}
+
       <div className="hero-dot-play">
         <ul className="hero-dots">
           <li onClick={() => setHeroCount(0)} className={heroCount === 0 ? "hero-dot orange" : "hero-dot"}></li>
@@ -23,4 +29,3 @@ const Hero = ({ heroData, setHeroCount, heroCount }) => {
 };
 
 export default Hero;
-
