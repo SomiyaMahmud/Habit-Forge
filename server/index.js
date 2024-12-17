@@ -16,7 +16,8 @@ app.use((req, res, next) => {
 app.use(express.json());
 app.use(
   cors({
-    origin: "http://localhost:3000", // Adjust this if your frontend is hosted elsewhere
+    origin: "http://localhost:5173",
+    credentials: true,
   })
 );
 
@@ -39,7 +40,7 @@ app.post("/api/upload", upload.single("file"), (req, res) => {
 });
 
 app.use("/api/auth", authRoutes);
-app.use("/api/users", userRoutes);
+app.use("/api/user", userRoutes);
 
 app.listen(8800, () => {
   console.log("API working!");
